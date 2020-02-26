@@ -160,10 +160,9 @@ public class GameManager {
 			return false;
 
 		for (int i = 1; i < 4; i++) {
-			if (i != otherPlayer.getLastNumberOfEatenPizzas())
+			if (i != otherPlayer.getLastNumberOfEatenPizzas() && i <= numberOfPizzas)
 			{
-				if (i < numberOfPizzas && numberOfPizzas > 2)
-					return false;
+				return false;
 			}
 		}
 
